@@ -18,7 +18,7 @@ buildNumber.properties
 *.metadata
 *.ini
 autorun.inf
-*.DS_Store
+.DS_Store
 *.swp
 .springBeans
 .factorypath
