@@ -1,9 +1,9 @@
 package com.cisco.java.chapter7;
 
-public class car {
+public class Car {
     public void run(){
-        car carObj = new car();
-        System.out.println(carObj.toString());
+        Car car = new Car();
+        System.out.println(car.toString());
     }
 
     @Override

@@ -1,8 +1,8 @@
 package com.cisco.java.chapter8;
 
-public class mismatchedArrayException extends Exception {
+public class MismatchedArrayException extends Exception {
     int[] array1 , array2;
-    public mismatchedArrayException(int[] array1,int[] array2){
+    public MismatchedArrayException(int[] array1, int[] array2){
         this.array1 = array1;
         this.array2 = array2;
     }

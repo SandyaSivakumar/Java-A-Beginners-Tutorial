@@ -1,7 +1,7 @@
 package com.cisco.java.chapter12;
 
-public class acceptableCar extends car {
-    public acceptableCar(String name){
+public class AcceptableCar extends Car {
+    public AcceptableCar(String name){
         this.name = name;
         this.fuelEfficiency = FuelEfficiency.ACCEPTABLE;
     }

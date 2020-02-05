@@ -8,14 +8,14 @@ Finally, write a class to test it.
 
  */
 
-public class carTest {
+public class CarTest {
     public static void main(String[] args){
-        car[] carObj = new car[3];
-        carObj[0] = new efficientCar("Volkswagen");
-        carObj[1] = new acceptableCar("Hyundai");
-        carObj[2] = new gasGuzzler("Mercedes");
+        Car[] car = new Car[3];
+        car[0] = new EfficientCar("Volkswagen");
+        car[1] = new AcceptableCar("Hyundai");
+        car[2] = new GasGuzzler("Mercedes");
         int distance = 170;
-        for(car carIter: carObj){
+        for(Car carIter: car){
             System.out.printf("In a %s to drive %d miles, you need between %.2f and %.2f units of fuel",carIter.name,distance,carIter.calculateMinimumGasUsage(distance),carIter.calculateMaximumGasUsage(distance));
             System.out.println();
         }

@@ -9,7 +9,7 @@ The run class of SUV should print the return value of the parent’s toString me
 Next, add a main method in SUV that creates an SUV object and calls its run method.
  */
 
-public class suv extends car {
+public class Suv extends Car {
     @Override
     public void run(){
         System.out.println(super.toString());
@@ -22,7 +22,7 @@ public class suv extends car {
     }
 
     public static void main(String[] args){
-        suv suvObj = new suv();
-        suvObj.run();
+        Suv suv = new Suv();
+        suv.run();
     }
 }

@@ -1,6 +1,6 @@
 package com.cisco.java.chapter12;
 
-abstract class car {
+abstract class Car {
     public String name;
     FuelEfficiency fuelEfficiency;
     public double calculateMinimumGasUsage(int distance){

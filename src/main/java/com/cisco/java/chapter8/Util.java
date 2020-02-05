@@ -13,13 +13,13 @@ The method throws a NullPointerException if one of the arrays is null.
 
 import java.util.Arrays;
 
-public class util {
-    public static long[] addArray(int[] array1, int[] array2) throws mismatchedArrayException, java.lang.NullPointerException{
+public class Util {
+    public static long[] addArray(int[] array1, int[] array2) throws MismatchedArrayException, java.lang.NullPointerException{
         if(array1.length==0 || array2.length==0){
             throw new NullPointerException("Empty array exception");
         }
         if(array1.length!=array2.length){
-            throw new mismatchedArrayException(array1,array2);
+            throw new MismatchedArrayException(array1,array2);
         }
         int i;
         long[] result = new long[array1.length];
@@ -38,7 +38,7 @@ public class util {
             System.out.println(Arrays.toString(result));
         } catch (NullPointerException e){
             System.out.println(e);
-        } catch (mismatchedArrayException e){
+        } catch (MismatchedArrayException e){
             System.out.println(e);
         }
 
@@ -47,7 +47,7 @@ public class util {
             Arrays.toString(result);
         } catch (NullPointerException e){
             System.out.println(e);
-        } catch (mismatchedArrayException e){
+        } catch (MismatchedArrayException e){
             System.out.println(e);
         }
     }

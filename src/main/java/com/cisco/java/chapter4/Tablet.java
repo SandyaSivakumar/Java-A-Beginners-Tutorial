@@ -1,11 +1,18 @@
 package com.cisco.java.chapter4;
 
-public class tablet {
+/*
+Create a class whose fully-qualified name is com.example.Tablet to model an
+Android tablet. The class must have three private fields, weight (int), screenSize (float) and wifiOnly (boolean).
+Access to the fields must be through pairs of public get and set methods, i.e. getWeight/setWeight, getScreenSize/setScreenSize and getWifiOnly/setWifiOnly.
+The class must also have one constructor, a no-argument constructor.
+ */
+
+public class Tablet {
     private int weight;
     private float screenSize;
     private boolean wifiOnly;
 
-    public tablet() {
+    public Tablet() {
         weight = 0;
         screenSize = 0.0f;
         wifiOnly = false;
@@ -43,12 +50,12 @@ public class tablet {
     }
 
     public static void main(String[] args){
-        tablet tb = new tablet();
-        tb.display();
-        tb.setWifiOnly(true);
-        tb.setScreenSize(15f);
-        tb.setWeight(1);
-        tb.display();
+        Tablet tablet = new Tablet();
+        tablet.display();
+        tablet.setWifiOnly(true);
+        tablet.setScreenSize(15f);
+        tablet.setWeight(1);
+        tablet.display();
 
     }
 }

@@ -1,6 +1,7 @@
 package com.cisco.java.chapter6;
 
-public class arrayUtil {
+
+public class ArrayUtil {
     public static int max(int[] numberList){
         int i;
         int maxValue = -1;
