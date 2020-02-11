@@ -23,8 +23,11 @@ public class GasMileage {
             mileageList.add(mileageValue);
 
         }
-
-        System.out.println("Average Mileage: ");
+        float sum=0;
+        for(int i=0;i<numOfEntries;i++){
+            sum = sum + (float)mileageList.get(i);
+        }
+        System.out.println("Average Mileage: "+sum/numOfEntries);
 
     }
 }
