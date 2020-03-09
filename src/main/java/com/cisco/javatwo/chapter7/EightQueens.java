@@ -1,7 +1,6 @@
 package com.cisco.javatwo.chapter7;
 
-/* Java program to solve 8 Queen Problem using
-backtracking */
+
 public class EightQueens {
     final int N = 8;
 
@@ -20,17 +19,17 @@ public class EightQueens {
     {
         int i, j;
 
-        /* Check this row on left side */
+        //Check this row on left side
         for (i = 0; i < col; i++)
             if (board[row][i] == 1)
                 return false;
 
-        /* Check upper diagonal on left side */
+        //Check upper diagonal on left side
         for (i = row, j = col; i >= 0 && j >= 0; i--, j--)
             if (board[i][j] == 1)
                 return false;
 
-        /* Check lower diagonal on left side */
+        //Check lower diagonal on left side
         for (i = row, j = col; j >= 0 && i < N; i++, j--)
             if (board[i][j] == 1)
                 return false;
@@ -74,14 +73,14 @@ public class EightQueens {
 
     boolean solveNQ()
     {
-        int board[][] = { { 0, 0, 0, 0,0,0,0,0},
-                { 0, 0, 0, 0,0,0,0,0 },
-                { 0, 0, 0, 0,0,0,0,0 },
-                { 0, 0, 0, 0,0,0,0,0 },
-                { 0, 0, 0, 0,0,0,0,0},
-                { 0, 0, 0, 0,0,0,0,0},
-                { 0, 0, 0, 0,0,0,0,0},
-                { 0, 0, 0, 0,0,0,0,0},};
+        int board[][] = { { 0,0,0,0,0,0,0,0},
+                { 0,0,0,0,0,0,0,0 },
+                { 0,0,0,0,0,0,0,0 },
+                { 0,0,0,0,0,0,0,0 },
+                { 0,0,0,0,0,0,0,0},
+                { 0,0,0,0,0,0,0,0},
+                { 0,0,0,0,0,0,0,0},
+                { 0,0,0,0,0,0,0,0},};
 
         if (solveNQUtil(board, 0) == false) {
             System.out.print("Solution does not exist");
@@ -92,11 +91,11 @@ public class EightQueens {
         return true;
     }
 
-    // driver program to test above function
+
     public static void main(String args[])
     {
         EightQueens queen = new EightQueens();
         queen.solveNQ();
     }
 }
-// This code is contributed by Abhishek Shankhadhar
+
